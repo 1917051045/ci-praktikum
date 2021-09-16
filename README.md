@@ -1,7 +1,7 @@
 # Praktikum Web Lanjut
-## NPM    : 1917051045
-## Nama   : Muhammad Bintang Firdaus
-## Kelas  : A
+NPM    : 1917051045
+Nama   : Muhammad Bintang Firdaus
+Kelas  : A
 
 
 
