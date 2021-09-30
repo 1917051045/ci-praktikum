@@ -843,17 +843,23 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <!-- ch1 -->
+    <div class="container mt-3">
+      <div class="text-center">
+          <img src="/assets/images/linux.png" alt="logo" width="180" class="img-thumbnail rounded-circle">
+          <h1 class="display-4">Praktikum Web Lanjut Dengan Studi Kasus Blog App</h1>
+          <p class="lead">Programming | Codeigniter 4 | Php</p>
+      </div>
+    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <!-- <footer class="main-footer">
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.1.0
     </div>
-  </footer>
+  </footer> -->
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -863,12 +869,6 @@
 </div>
 <!-- ./wrapper -->
 
-<div class="container mt-3">
-    <div class="text-center">
-        <img src="/assets/images/linux.png" alt="logo" width="180" class="img-thumbnail rounded-circle">
-        <h1 class="display-4">Praktikum Web Lanjut Dengan Studi Kasus Blog App</h1>
-        <p class="lead">Programming | Codeigniter 4 | Php</p>
-    </div>
-</div>
+
 
 <?= $this->endSection();?>
