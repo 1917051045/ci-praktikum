@@ -186,7 +186,7 @@
             <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="/admin" class="nav-link active">
+              <a href="/admin" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                   Dashboard
@@ -194,7 +194,7 @@
               </a> 
             </li>
             <li class="nav-item">
-              <a href="/admin/posts" class="nav-link">
+              <a href="/admin/posts" class="nav-link active">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
                   My Posts
@@ -215,12 +215,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Dashboard</h1>
+              <h1 class="m-0">My Posts</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Dashboard</li>
+                <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                <li class="breadcrumb-item active">My Posts</li>
               </ol>
             </div><!-- /.col -->
           </div><!-- /.row -->
@@ -229,7 +229,9 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      
+      <div class="container">
+        <a href="/admin/posts/create" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Post</a>
+      </div>
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
