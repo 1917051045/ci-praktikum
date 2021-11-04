@@ -229,29 +229,29 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="judul">Judul Postingan</label>
-                                        <input type="text" class="form-control" id="judul" name="judul">
+                                        <label for="post_title">Judul Postingan</label>
+                                        <input type="text" class="form-control" id="post_title" name="post_title">
                                     </div>
                                     <div class="form-group">
                                         <label for="slug">slug</label>
                                         <input type="text" class="form-control" id="slug" name="slug">
                                     </div>
                                     <div class="form-group">
-                                        <label for="kategori">Kategori Postingan</label>
-                                        <input type="text" class="form-control" id="kategori" name="kategori">
+                                        <label for="post_category">Kategori Postingan</label>
+                                        <input type="text" class="form-control" id="post_category" name="post_category">
                                     </div>
                                     <div class="form-group">
-                                        <label for="author">Author</label>
-                                        <input type="text" class="form-control" id="author" name="author">
+                                        <label for="post_author">Author</label>
+                                        <input type="text" class="form-control" id="post_author" name="post_author">
                                     </div>
                                     <button type="submit" class="btn btn-primary">Submit
                                         <i class="fas fa-paper-plane"></i>
                                     </button>
                                 </div>
                                 <div class="col-md-8">
-                                    <label for="deskripsi">Deskripsi Postingan</label>
+                                    <label for="post_description">Deskripsi Postingan</label>
                                     <br>
-                                    <textarea name="deskripsi" id="deskripsi"></textarea>
+                                    <textarea name="post_description" id="post_description"></textarea>
                                 </div>
                             </div>
                         </form>
@@ -281,6 +281,6 @@
 
 <?= $this->section('myscript'); ?>
 <script>
-    $('#deskripsi').summernote()
+    $('#post_description').summernote()
 </script>
 <?= $this->endSection(); ?>
