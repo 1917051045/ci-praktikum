@@ -112,7 +112,6 @@ class AdminPostsController extends BaseController
 
     public function update($slug)
     {
-        //cek judul & slug
         $postLama = $this->PostModel->getPosts($this->request->getVar('slug'));
         if ($postLama['slug'] == $this->request->getVar('slug')) {
             $rule_slug = 'required';

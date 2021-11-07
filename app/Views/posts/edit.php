@@ -162,7 +162,19 @@
           <img src="/assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Fanirizki Sofiyana</a>
+          <a href="#" class="d-block">Muhammad Bintang</a>
+        </div>
+      </div>
+      
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
         </div>
       </div>
       
@@ -170,22 +182,22 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+              with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="/admin" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
-            </a>
+            </a> 
           </li>
           <li class="nav-item">
-            <a href="/admin/posts" class="nav-link">
-              <i class="nav-icon fas fa-book-open"></i>
+            <a href="/admin/posts" class="nav-link active">
+              <i class="nav-icon fas fa-book"></i>
               <p>
                 My Posts
               </p>
-            </a>
+            </a> 
           </li>
         </ul>
       </nav>
@@ -237,7 +249,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="slug">Slug</label>
-                                <input type="text" class="form-control <?= ($validation->hasError('slug')) ? 'is-invalid' : ''; ?>" id="slug" name="slug" value="<?= $posts['slug']; ?>">
+                                <input type="text" class="form-control disable <?= ($validation->hasError('slug')) ? 'is-invalid' : ''; ?>" id="slug" name="slug" value="<?= $posts['slug']; ?>" readonly>
                                 <?php if ($validation->hasError('slug')): ?>
                                   <div class="invalid-feedback">
                                     <?= $validation->getError("slug"); ?>
